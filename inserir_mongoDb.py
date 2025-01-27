@@ -15,6 +15,7 @@ def carregar_json(json_path):
         db["player"].insert_many(data[0]["player"])
         print("Dados iniciais carregados com sucesso!")
 
+        
 def criar_registro(collection_name, registro):
     collection = db[collection_name]
     resultado = collection.insert_one(registro)
